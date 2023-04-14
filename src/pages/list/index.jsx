@@ -2,13 +2,10 @@ import { Button } from "@material-tailwind/react";
 import Modal from "../../components/modal";
 import Table from "../../components/Table";
 import Title from "../../components/Title";
-import { rowComponent } from "../../helpers";
 import { useList } from "../../hooks/list.hooks";
 export default function Form() {
   const { userList, tableHeader, nav, userListIsEmpty, modal, modalHandler } =
     useList();
-  console.log(tableHeader);
-  console.log(userListIsEmpty);
   if (!userListIsEmpty)
     return (
       <div className="w-screen p-10 animate-fade-in">
